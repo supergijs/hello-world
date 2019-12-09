@@ -3,15 +3,131 @@
   padding:0px;
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+
+html {
+
 }
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+@font-face {
+    font-family: 'Super';
+    src: url('fonts/akzidenzgrotesk-super-webfont.woff2') format('woff2'),
+         url('fonts/akzidenzgrotesk-super-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
 }
+
+body{
+	width: 100%;
+	overflow-y: hidden;
+	margin: 0px;
+	font-family: Super;
+}
+
+#container{
+/*		background: linear-gradient(rgba(255,255,0,0.5), rgba(200,200,0,0.5));
+*/
+
+}
+
+#menu{
+	position: fixed;
+}
+#menu a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 24pt;
+}
+
+ul {
+	list-style: none;
+}
+
+#header{
+	position: relative;
+	width: 80%;
+	margin-top: 0px;
+	padding: 150px;
+}
+
+.footer, .push{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+}
+
+.post{
+	width:400px;
+	background-color: rgba(240,240,255,0.5);
+	border: 4px solid yellow;
+	padding: 10px;
+	margin: 5px;
+	display: block;
+	float:left;
+}
+
+.post img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+div{
+	padding: 10px;
+}
+
+h1{
+	text-align: left;
+	font-family: Super, Optima, Times, Times New Roman;
+	font-weight: lighter;
+	padding-top: 30px;
+	margin: 0px;
+}
+
+#sitetitle {
+		color: #FF0;
+		position: fixed;
+		top: 50px;
+		left: 50px;
+		font-size: 150pt;
+		line-height: 0.8;
+		opacity: 0.5;
+	/*	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;*/
+}
+
+a{
+	color:#00b;
+}
+
+p{
+	font-family: Super, Optima, Times, Times New Roman;
+}
+
+iframe{
+	height: 90%;
+	width:30%;
+	float: right;
+	display: inline-block;
+	overflow: scroll;
+	border: none;
+	border-right: 2px solid #000;
+}
+
+h5{
+	font-weight: 100;
+	text-transform: lowercase;
+}
+
+/*#liberty{
+	height: 200px;
+	width: 300px;
+	background: #EEE;
+	border: 1px solid #000;
+}*/
